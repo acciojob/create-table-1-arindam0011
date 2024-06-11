@@ -3,9 +3,9 @@ function insert_Row() {
     //Write your code here
   let row= document.createElement("tr");
 	row.innerHTML=`
-					<td>Row${table.rows.length+1} cell1</td>
-					<td>Row${table.rows.length+1} cell2</td>
+					<td>New cell1</td>
+					<td>New cell2</td>
 					`;
-	table.appendChild(row);
+	table.prepend(row);
   
 }
