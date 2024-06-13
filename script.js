@@ -1,11 +1,10 @@
 function insert_Row() {
-	let table= document.getElementById("sampleTable");
-    //Write your code here
-  let row= document.createElement("tr");
-	row.innerHTML=`
-					<td>New Cell1</td>
-					<td>New Cell2</td>
-					`;
-	table.prepend(row);
+	let tableBody = document.getElementById("sampleTable").tBodies[0];
+	let row = document.createElement("tr");
+	row.innerHTML = `
+		<td>New Cell1</td>
+		<td>New Cell2</td>
+	`;
+	tableBody.prepend(row);
   
 }
